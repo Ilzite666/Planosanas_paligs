@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plānošanas palīgs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Plānošanas palīgs</h1>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab-btn" id="tab-vizuals" onclick="ui.setActiveTab('vizuals')">Skolotāju palīgu grafiks</button>
+        <button class="tab-btn" id="tab-stem" onclick="ui.setActiveTab('stem')">STEM / Pasākumi</button>
+        <button class="tab-btn" id="tab-parbaudes" onclick="ui.setActiveTab('parbaudes')">Pārbaudes darbi</button>
+        <button class="tab-btn" id="tab-kopskats" onclick="ui.setActiveTab('kopskats')">Kopskats</button>
+        <button class="tab-btn" id="tab-iestatijumi" onclick="ui.setActiveTab('iestatijumi')">Iestatījumi</button>
+    </nav>
+
+    <main id="app-content">
+        <div style="text-align:center; padding:50px;">Lūdzu, uzgaidiet! Notiek datu sinhronizācija...</div>
+    </main>
+
+    <script src="api.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
